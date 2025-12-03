@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0c0c;
+  overflow: hidden;
+}
+
+.terminal-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0c0c0c;
+  padding: 20px;
+  font-family: "Ubuntu Mono", "Courier New", monospace;
+  color: #00ff00;
+  font-size: 15px;
+  line-height: 1.6;
+  cursor: text;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.terminal-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.terminal-container::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+.terminal-container::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+.terminal-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.terminal-welcome {
+  color: #00d900;
+  margin-bottom: 10px;
+}
+
+.terminal-welcome p {
+  margin: 5px 0;
+}
+
+.terminal-body {
+  margin-bottom: 10px;
+}
+
+.terminal-line {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.terminal-line.command {
+  color: #00ff00;
+  font-weight: 700;
+}
+
+.prompt-symbol {
+  color: #00ff00;
+}
+
+.prompt-colon {
+  color: #fff;
+}
+
+.prompt-path {
+  color: #5555ff;
+}
+
+.prompt-dollar {
+  color: #fff;
+  margin: 0 8px;
+}
+
+.terminal-output {
+  margin: 5px 0 15px 0;
+}
+
+.output-text {
+  color: #c0c0c0;
+  padding: 2px 0;
+}
+
+.terminal-input-line {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #0c0c0c;
+  padding: 5px 0;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff00;
+  font-family: "Ubuntu Mono", "Courier New", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  flex: 1;
+  width: calc(100% - 240px);
+  caret-color: #00ff00;
+}
+
+.terminal-input::selection {
+  background: #00ff00;
+  color: #0c0c0c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .terminal-container {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .terminal-input {
+    font-size: 13px;
+  }
+}
