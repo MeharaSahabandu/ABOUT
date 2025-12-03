@@ -112,7 +112,7 @@ const About = () => {
       { type: "output", text: [], isAnimating: true },
     ]);
 
-    // Animate each line
+    //animation
     for (let i = 0; i < lines.length; i++) {
       await new Promise((resolve) => setTimeout(resolve, 150)); // Delay between lines
 
